@@ -1,28 +1,7 @@
 package org.example;
-class Student{
-    private String name;
-    private int birthYear;
-    private boolean enrolled;
-    public void setName(String settingName){
-        this.name=settingName;
-    }
-    public String getName(){
-        return this.name;
-    }
-    public void setBirthYear(int settingBirthYear){
-        this.birthYear=settingBirthYear;
-    }
-    public int getBirthYear(){
-        return this.birthYear;
-    }
-    public void setEnrolled(boolean settingEnrolled){
-        this.enrolled=settingEnrolled;
-    }
-    public boolean getEnrolled(){
-        return this.enrolled;
-    }
 
-}
+import model.Student;
+
 public class Main {
     public static void main(String[] args) {
         Student me = new Student();
@@ -36,12 +15,8 @@ public class Main {
         } else {
             System.out.println("not enrolled");
         }
-        String s1="Saman";
-        String s2="Khaladj-Nia";
-        String result="";
-        char space=' ';
-        int n=3;
-        result=s1+space+s2+space+n;
-        System.out.println(result);
+        System.out.println(me);
+        Student hanna=new Student("Hanna", 2014, false);
+        System.out.println(hanna);
     }
 }

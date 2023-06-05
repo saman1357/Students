@@ -36,5 +36,12 @@ public class Main {
         } else {
             System.out.println("not enrolled");
         }
+        String s1="Saman";
+        String s2="Khaladj-Nia";
+        String result="";
+        char space=' ';
+        int n=3;
+        result=s1+space+s2+space+n;
+        System.out.println(result);
     }
 }

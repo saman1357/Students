@@ -1,10 +1,12 @@
 package model;
 
-public class Student {
+ public class Student {
     private String name;
     private int birthYear;
+    private boolean enrolled;
+    int id;
 
-    public Student(){
+     public Student(){
 
     }
     public Student(String name, int birthYear, boolean enrolled) {
@@ -22,7 +24,6 @@ public class Student {
                 '}';
     }
 
-    private boolean enrolled;
 
     public void setName(String settingName) {
         this.name = settingName;
